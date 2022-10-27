@@ -1,6 +1,6 @@
 public class Author {
-    String authorName;
-    String authorSurname;
+   private final String authorName;
+   private final String authorSurname;
 
     public Author(String authorName, String authorSurname) {
         this.authorName=authorName;
@@ -14,5 +14,8 @@ public class Author {
         return this.authorSurname;
     }
 
-
+    @Override
+    public String toString() {
+        return authorName + " " + authorSurname;
+    }
 }
